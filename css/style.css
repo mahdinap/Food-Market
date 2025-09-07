@@ -1,0 +1,15 @@
+ .category-item {
+      text-align: center;
+      display: block;
+      border-radius: 10px;
+      background: #f8f9fa;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+    .category-item:hover {
+      transform: translateY(-5px);
+    }
+    .btn-yellow {
+      background-color: #ffc107;
+      color: #000;
+    }
