@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Check Out</title>
      <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -207,134 +207,98 @@
     </header> 
     <section class="aboutUs my-5" style="background: url(/assets/image/background-pattern.jpg);background-repeat: no-repeat;">
       <div class="container-fluid " style="height: 100px;">
-        <h1 class="display-4 text-uppercase">cart</h1>
+        <h1 class="display-1 text-uppercase">check out</h1>
       </div>
     </section>
 
-    <section class="Purchases mb-5 p-1">
+    <section>
         <div class="container-fluid">
-            <div class="row g-4">
-                <div class="col-12 col-md-8 ">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Product</th>
-                            <th>Quantity</th>
-                            <th>Subtotal</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div>
-                                    <img src="/assets/image/product-thumb-14.jpg" alt="pro" class="img-fluid"style="max-width: 100px;">
-                                    <span class="ms-2">Mint</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-outline-secondary">-</button>
-                                    <input type="text" class="form-control text-center mx-2" value="1" style="width: 50px;">
-                                   <button class="btn btn-outline-secondary ">+</button>
-                                </div>
-                            </td>
-                            <td>$1500.00</td>
-                            <td><button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <img src="/assets/image/product-thumb-12.jpg" alt="Pink Watch" class="img-fluid" style="max-width: 100px;">
-                                    <span class="ms-2">Pink Watch</span>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="d-flex align-items-center">
-                                    <button class="btn btn-outline-secondary quantity-btn">-</button>
-                                    <input type="text" class="form-control text-center mx-2" value="1" style="width: 50px;">
-                                    <button class="btn btn-outline-secondary quantity-btn">+</button>
-                                </div>
-                            </td>
-                            <td>$870.00</td>
-                            <td><button class="btn btn-outline-danger"><i class="bi bi-trash"></i></button></td>
-                        </tr>
-                    </tbody>
-                </table>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="Purchase-invoice">
-                        <h3 class="mb-5 text-muted fs-1">Cart Total</h3>
-                        <div class="pricTable">
-                            <table class="table fs-5 text-muted">
-                                <tbody>
-                                    <tr>
-                                        <th>SUBTOTAL</th>
-                                        <td>$2,370.00</td>
-                                    </tr>
-                                    <tr>
-                                        <th>TOTAL</th>
-                                        <td>$2,370.00</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                        </div>   
-                    </div>
-                    <div class="btn w-100">
-                        <div class="d-flex gap-4 mb-3">
-                            <button class="btn btn-outline-warning text-dark w-50">Back</button>
-                            <button class="btn btn-outline-warning text-dark w-50">Delet All Items</button>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>Billing Details</h3>
+                    <form class="form d-flex flex-column gap-4">
+                        <div class="">
+                            <label class="form-label" for="firstname">First Name*</label>
+                            <input class="form-control" type="text" id="firstname">
                         </div>
-                        <button class="btn btn-warning text-light btn-lg w-100">Proceed to checkout</button>
-                    </div>
-                </div>
-    
-            </div>
+                        <div class="">
+                            <label class="form-label" for="lastname">Last Name*</label>
+                            <input class="form-control" type="text" id="lastname">
+                        </div>
+                        <div class="">
+                            <label class="form-label" for="companyname">Company Name(optional)</label>
+                            <input class="form-control" type="text" id="companyname">
+                        </div>
+                        <div>
+                             <label for="region">Country / Region*</label>
+                             <select class="form-select" aria-label="Default select example" id="region">
+                                 <option value="1">USA</option>
+                                 <option value="2">Germany</option>
+                                 <option value="3">Canada</option>
+                             </select>
+                        </div>
+                        <div class="">
+                            <label class="form-label" for="companyname">Street Address*</label>
+                            <input class="form-control mb-3" type="text" id="companyname" placeholder="House number and street name">
+                            <input class="form-control" type="text" id="companyname" placeholder="Appartments, suite, etc.">
+                        </div>
+                        <div class="">
+                            <label class="form-label" for="TownCity">Town / City *</label>
+                            <input class="form-control" type="text" id="TownCity ">
+                        </div>
+                        <div>
+                             <label for="State">State *</label>
+                             <select class="form-select" aria-label="Default select example" id="State">
+                                 <option value="1">Florida</option>
+                                 <option value="2">New York</option>
+                                 <option value="3">Texas</option>
+                             </select>
+                        </div>
+                        <div class="">
+                            <label class="form-label" for="zipcode">Zip Code *</label>
+                            <input class="form-control" type="text" id="zipcode">
+                        </div>
+                        <div class="">
+                            <label class="form-label" for="Phone">Phone *</label>
+                            <input class="form-control" type="tel" id="Phone">
+                        </div>
+                        <div class="">
+                            <label class="form-label" for="email">Email address *</label>
+                            <input class="form-control" type="email" id="email">
+                        </div>
 
+                    </form>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Additional Information</h3>
+                    <form class="form mb-5">
+                        <div class="">
+                            <label for="note">Order notes (optional)</label>
+                            <textarea class="form-control" id="note" rows="2" name="note" placeholder="Notes about your order. Like special notes for delivery."></textarea>
+                        </div>
+                        <div class="form-check mt-4">
+                            <input class="form-check-input " type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label fs-4" for="radioDefault">Direct bank transfer</label>
+                            <p class="text-muted">Make your payment directly into our bank account. Please use your Order ID. Your order will shipped after funds have cleared in our account.</p>
+                        </div>
+                        <div class="form-check mt-4">
+                            <input class="form-check-input " type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label fs-4" for="radioDefault">Direct bank transfer</label>
+                            <p class="text-muted">Make your payment directly into our bank account. Please use your Order ID. Your order will shipped after funds have cleared in our account.</p>
+                        </div>
+                        <div class="form-check mt-4">
+                            <input class="form-check-input " type="radio" name="radioDefault" id="radioDefault1">
+                            <label class="form-check-label fs-4" for="radioDefault">Direct bank transfer</label>
+                            <p class="text-muted">Make your payment directly into our bank account. Please use your Order ID. Your order will shipped after funds have cleared in our account.</p>
+                        </div>
+                        <button class="btn btn-dark w-100 py-2">Place an order</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
-   
-  <section class="py-5 loginForm p-3 ">
-        <div class="container-fluid" >
-            <div class=" py-5 rounded-5" style="background: url(bg-leaves-img-pattern.png);background-repeat: no-repeat;background-color: #cfe2ff;">
-
-                <div class="container my-4">
     
-                    <div class="row mx-2 py-5 ">
-                        
-                        
-                            <div class="col-12 col-md-6">
-                                <div class="text">
-                                    <h2 class="display-2 fw-bold">
-                                        Get <span class="text-warning">25% Discount</span>  on your first purchase
-                                    </h2>
-                                    <p class="py-4"> Lorem ipsum dolor sit, amet consectetur adipisicing elit.Dictumst amet, metus, sit massa posuere maecenas. At tellus ut nunc amet vel egestas.</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 d-flex  justify-content-center align-items-center">
-                                <form class="w-75 d-flex flex-column gap-3">
-                                    <label for="">Name</label>
-                                    <input class="form-control py-2" type="text" placeholder="Name">
-                                    <label for="">Email</label>
-                                    <input class="form-control py-2" type="email" placeholder="Email">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                                        <label class="form-check-label" for="checkDefault">Subscribe to the newsletter</label>
-                                    </div>
-                                    <a class="btn btn-dark" href="">Submit</a>
-                                </form>
-                            </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
     <footer class="my-5">
     <div class="container-fluid">
         <div class="row">
