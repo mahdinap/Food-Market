@@ -21,7 +21,7 @@ swiper {
       height: 100%;
     }
 
-    .swiper-slide {
+    .sw {
       text-align: center;
       font-size: 18px;
       background: #444;
@@ -30,20 +30,20 @@ swiper {
       align-items: center;
     }
 
-    .swiper-slide img {
+    .sw img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-    .swiper {
+    .Swiper {
       width: 100%;
       height: 500px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    .swiper-slide {
+    .sw {
       background-size: cover;
       background-position: center;
     }
@@ -59,7 +59,7 @@ swiper {
       padding: 10px 0;
     }
 
-    .mySwiper .swiper-slide {
+    .mySwiper .sw {
       width: 25%;
       height: 100%;
       opacity: 0.4;
@@ -69,9 +69,4 @@ swiper {
       opacity: 1;
     }
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+  
