@@ -1,6 +1,7 @@
 <p align="center">
   <a href="https://myfoodmarket.netlify.app/">  <img src="assets/github-images/cover.jpg" alt="Food Market Banner" width="700"> </a>
 </p>
+<p align="center"><em>Click the banner to view the live demo</em></p>
 
 
 # 🍔 Food Market  
